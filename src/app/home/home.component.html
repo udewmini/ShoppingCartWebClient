@@ -1,0 +1,22 @@
+<!-- <div class="card mt-4">
+    <h4 class="card-header">You're logged in</h4>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+    <div class="card-body">
+        <h6>Welcome </h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="users">
+            <li *ngFor="let user of users">{{user.email}}</li>
+        </ul>
+    </div>
+</div> -->
+
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-white">Online Shopping</a>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+  </nav>
+  
+  <div class="card m-5" style="width:18rem" *ngIf="userDetails">
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li>
+    </ul>
+  </div>

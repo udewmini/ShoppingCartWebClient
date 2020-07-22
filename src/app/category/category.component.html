@@ -1,0 +1,15 @@
+<div class="container py-5">  
+    <h3 class="text-center text-uppercase">List of Categories</h3>  
+    <table class="table table-bordered table-striped">  
+        <thead>  
+            <tr class="text-center text-uppercase">  
+                <th>Category</th>  
+            </tr>  
+        </thead>  
+        <tbody>  
+          <tr *ngFor="let cat of category">  
+            <td>{{cat.name}}</td>  
+            </tr>  
+        </tbody>  
+      </table>  
+    </div>
